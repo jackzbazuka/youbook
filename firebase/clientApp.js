@@ -1,5 +1,6 @@
 import { getApps, initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
+import { getFirestore } from 'firebase/firestore'
 import { initializeAnalytics } from 'firebase/analytics'
 import { initializePerformance } from 'firebase/performance'
 
@@ -26,3 +27,4 @@ if (!getApps().length) {
 }
 
 export const auth = getAuth()
+export const db = getFirestore()
