@@ -122,7 +122,7 @@ export default function Layout({ children }) {
                             </div>
                         </nav>
                     </header>
-                    <div className='w-1/2 mx-auto'>
+                    <div className='sm:w-5/6 md:w-2/3 lg:w-1/2 mx-auto'>
                         <UserContext.Provider value={data}>
                             {children}
                         </UserContext.Provider>
