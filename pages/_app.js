@@ -1,6 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { useEffect } from 'react'
 import Script from 'next/script'
+import NextHead from 'next/head'
 import { useRouter } from 'next/router'
 import * as gtag from '@/lib/gtag'
 import Layout from '@/components/Layout'
@@ -19,6 +20,9 @@ export default function YouBook({ Component, pageProps }) {
 
     return (
         <>
+            <NextHead>
+                <title>YouBook</title>
+            </NextHead>
             <Script
                 strategy='afterInteractive'
                 src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
