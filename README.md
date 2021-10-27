@@ -1,3 +1,3 @@
 # youbook
 
-A productivity app to bookmark time-stamped youtube videos
+A productivity webapp to bookmark time-stamped youtube videos
