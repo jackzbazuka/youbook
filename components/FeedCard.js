@@ -1,5 +1,5 @@
 import { doc, updateDoc } from 'firebase/firestore'
-import { db } from '@/firebase/clientApp'
+import { db } from '@/lib/clientApp'
 
 export default function FeedCard({
     docID,

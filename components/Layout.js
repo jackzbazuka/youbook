@@ -3,7 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth'
 import { useRouter } from 'next/router'
 import { Menu, Transition } from '@headlessui/react'
-import { auth } from '@/firebase/clientApp'
+import { auth } from '@/lib/clientApp'
 import Loading from '@/components/Loading'
 
 export const UserContext = createContext()
