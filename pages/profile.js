@@ -112,8 +112,7 @@ export default function Profile() {
 						/>
 						<button
 							onClick={createPost}
-							className='w-1/6 text-white bg-red-700 hover:bg-red-800 outline-none rounded-xl transition-all'
-						>
+							className='w-1/6 text-white bg-red-700 hover:bg-red-800 outline-none rounded-xl transition-all'>
 							Post
 						</button>
 					</div>
