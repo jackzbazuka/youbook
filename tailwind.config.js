@@ -10,6 +10,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: { ...colors },
+			scale: {
+				102: '1.02',
+			},
 		},
 	},
 	variants: {

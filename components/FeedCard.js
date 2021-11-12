@@ -28,7 +28,7 @@ export default function FeedCard({
 	}
 
 	return (
-		<div className='h-48 w-full my-5 p-5 flex flex-row bg-gray-800 lg:hover:scale-105 transition-all duration-300 rounded-3xl'>
+		<div className='h-48 w-full my-5 p-5 flex flex-row bg-gray-800 lg:hover:scale-102 transition-all duration-300 rounded-3xl'>
 			<div className='w-2/3 flex flex-col'>
 				<div className='h-1/5 text-xs flex flex-row justify-start items-center gap-1'>
 					<span className='px-2 py-1 text-white rounded-xl bg-gray-900'>

@@ -33,8 +33,8 @@ export default function Layout({ children }) {
 								<div
 									onClick={() => router.push('/')}
 									className='mr-10 flex flex-row justify-start items-center hover:cursor-pointer gap-2'>
-									<img src='/logo.png' className='h-10' />
-									<span className='text-2xl font-bold'>
+									<img src='/logo.png' className='h-7' />
+									<span className='text-2xl font-medium'>
 										YouBook
 									</span>
 								</div>
@@ -43,7 +43,7 @@ export default function Layout({ children }) {
 								{!user ? (
 									<button
 										onClick={signInWithGoogle}
-										className='px-3 py-1 text-white hover:text-gray-200 border-2 border-white hover:border-gray-200 transition-all rounded-3xl'>
+										className='px-3 py-1 text-white hover:text-gray-200 border border-white hover:border-gray-200 transition-all rounded-xl'>
 										Login
 									</button>
 								) : (
@@ -104,6 +104,18 @@ export default function Layout({ children }) {
 							{children}
 						</UserContext.Provider>
 					</div>
+					<footer className='w-full mt-20 px-10 py-20 grid place-items-center text-sm text-white bg-gray-800'>
+						<p>
+							Made by{' '}
+							<a
+								href='https://milindsathe.io/'
+								target='_blank'
+								className='lg:hover:text-green-500 transition-all duration-300'>
+								Milind
+							</a>{' '}
+							and Uday
+						</p>
+					</footer>
 				</div>
 			) : (
 				<Loading />
