@@ -14,10 +14,10 @@ import {
 	serverTimestamp,
 } from 'firebase/firestore'
 import axios from 'axios'
-import { db } from '@/lib/clientApp'
-import { UserContext } from '@/components/Layout'
-import FeedCard from '@/components/FeedCard'
-import Loading from '@/components/Loading'
+import { db } from 'lib/clientApp'
+import { UserContext } from 'components/Layout'
+import FeedCard from 'components/FeedCard'
+import Loading from 'components/Loading'
 
 export default function Profile() {
 	const data = useContext(UserContext)
@@ -100,7 +100,7 @@ export default function Profile() {
 							className='w-3/6 px-3 py-2 text-white border-2 border-transparent focus:border-red-800 bg-gray-900 outline-none rounded-xl transition-all'
 						/>
 						<input
-							type='text'
+							type='url'
 							autoComplete='false'
 							required
 							maxLength={50}

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import { collection, query, orderBy, getDocs } from 'firebase/firestore'
-import { db } from '@/lib/clientApp'
-import MainFeedCard from '@/components/MainFeedCard'
-import Loading from '@/components/Loading'
+import { db } from 'lib/clientApp'
+import MainFeedCard from 'components/MainFeedCard'
+import Loading from 'components/Loading'
 
 export default function Home() {
 	const [posts, setPosts] = useState([])
@@ -67,7 +67,7 @@ export default function Home() {
 							onClick={sortRecent}
 							className={`${
 								isSortRecent
-									? `text-black bg-gray-300`
+									? `text-gray-800 bg-gray-300`
 									: `text-gray-300 bg-gray-800 hover:text-white`
 							} p-2 rounded-xl relative group transition-all`}>
 							<svg
